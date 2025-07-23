@@ -5,9 +5,9 @@ import StatsSection from "./StatsSection.tsx";
 import StoriesHome from "./stories-home.tsx";
 import GetInvolved from "./Get-Involved.tsx";
 import OurMission from "./Our-Mission.tsx";
+import backgroundImage from "../assets/blue-stars.jpg";
 
 function Home() {
-  const backgroundImage = "../src/assets/blue-stars.jpg";
 
   return (
     <>
