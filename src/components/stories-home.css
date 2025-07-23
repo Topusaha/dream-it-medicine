@@ -1,0 +1,101 @@
+.stories-home {
+    min-height: 100vh;
+    background-color: #89AFC1; /* blue background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  .stories-home__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    text-align: center;
+  }
+  
+  .stories-home__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 80rem; /* max width 1280px */
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .stories-home__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .story-card {
+    background-color: white;
+    color: #1f2937; /* dark gray */
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    min-height: 32rem;
+  }
+  
+  .story-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3),
+      0 10px 15px -3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .story-card__image {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    aspect-ratio: 4 / 3;
+    background: #e0e0e0;
+  }
+  
+  .story-card__content {
+    padding: 1.5rem 1.5rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .story-card__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .story-card__title {
+    font-size: 1rem;
+    color: #2563eb; /* blue */
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .story-card__description {
+    font-size: 1rem;
+    color: #4b5563; /* gray-600 */
+    line-height: 1.5;
+    flex-grow: 1;
+    font-style: italic;
+    quotes: "“" "”" "‘" "’";
+  }
+  
+  .story-card__description::before {
+    content: open-quote;
+  }
+  
+  .story-card__description::after {
+    content: close-quote;
+  }
+  
