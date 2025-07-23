@@ -76,7 +76,7 @@
   flex-direction: column;
   gap: 1.25rem;
   background: #f8fafc;
-  padding: 2rem 8rem;
+  padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   width: 100%;
@@ -153,20 +153,27 @@
   .get-involved-left, .get-involved-right {
     align-items: center;
     padding-right: 0;
+    padding-left: 0;
     max-width: 100%;
   }
   .get-involved-section {
     max-width: 100%;
     text-align: center;
   }
+  .get-involved-form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 600px) {
   .get-involved-container {
-    padding: 1rem 0.5rem;
+    padding: 1rem;
+    margin: 2rem auto;
   }
   .get-involved-form {
-    padding: 1rem 0.5rem;
+    padding: 1rem;
+    width: 100%;
   }
   .get-involved-form-row {
     flex-direction: column;
